@@ -11,6 +11,8 @@ const robots = [
   { name: 'Ratchet', alliance: null }
 ];
 
+const sortedRobots = robots.map(transformer => transformer.alliance = 'autobot')
+
 const zebraStripes = [
   { width: 9.12, color: null },
   { width: 5.71, color: null },
