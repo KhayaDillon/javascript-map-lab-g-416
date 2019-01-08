@@ -13,7 +13,9 @@ const robots = [
 
 const sortedRobots = robots.map(robot => {
   const isDecepticon = knownDecepticons.includes(robot.name);
-
+  return Object.assign({}, robot, {
+    alliance: isDecepticon ? 'decepticon' : 'autobot'
+  });
 });
 
 const zebraStripes = [
